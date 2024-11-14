@@ -1,6 +1,6 @@
 .Subcontainer {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
   gap: 20px; 
   padding: 20px;
   justify-items: center;
@@ -11,14 +11,12 @@
   justify-content: space-evenly;
 }
 .search-input {
-  width: 40%; /* Adjust width as desired */
+  width: 40%; 
   padding: 10px;
   font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 5px;
   margin: 5px 0 0 50px;
-  /* margin: 20px auto; */
-  /* display: block;  */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease;
   margin-bottom: 10px;
@@ -26,6 +24,6 @@
 
 .search-input:focus {
   outline: none;
-  border-color: #3e49b1; /* Match your theme color */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Add a slight shadow on focus */
+  border-color: #3e49b1; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); 
 }

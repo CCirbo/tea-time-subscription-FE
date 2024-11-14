@@ -21,7 +21,6 @@ function normalizeSubscriptionData(subscriptionData) {
   };
 }
 
-
 function SubscriptionDetail() {
   const { id } = useParams();
   const [subscription, setSubscription] = useState({});
@@ -40,9 +39,9 @@ function SubscriptionDetail() {
         setError("Failed to load subscription details.");
       });
   }
+
   function toggleStatus() {
     let newStatus;
-
     if (subscription.status === "active") {
       newStatus = "deactivated";
     } else {
@@ -89,9 +88,6 @@ function SubscriptionDetail() {
           <img src={coffee_image} alt="home button" />
         </Link>
       </div>
-      {/* <button onClick={() => getStatus(subscription.id, subscription.status)}>
-                Cancel
-            </button> */}
       <h2>{subscription.title}</h2>
       <h3>Price: ${subscription.price}</h3>
       <p>Description: {subscription.description}</p>
