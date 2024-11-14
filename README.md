@@ -1,4 +1,4 @@
-<h1 align="center"> Tea Time Subscription BE </h1>
+<h1 align="center"> Tea Time Subscription FullStack </h1>
 
 **Planning**
 ![wireframe](public/images/screenshot1.png)
