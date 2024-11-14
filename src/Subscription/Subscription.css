@@ -1,0 +1,26 @@
+.Subscription {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 15vw;
+  height: 24vh;
+  border: black 1px solid;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  background-color: #f9f9f9;
+ 
+}
+
+.Subscription:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  transform: scale(1.05);
+}
+
+.tea-picture {
+  width: 5rem;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
