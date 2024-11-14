@@ -1,70 +1,142 @@
-# Getting Started with Create React App
+<h1 align="center"> Tea Time Subscription BE </h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Planning**
+![wireframe](public/images/screenshot1.png)
+![schema](public/images/Screenshot2.png)
 
-## Available Scripts
+**HomeScreen**
+![home_screenshot](public/images/Screenshot4.png)
 
-In the project directory, you can run:
 
-### `npm start`
+**Details Page**
+![details page](public/images/Screenshot3.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<h2 align="center"> Context </h2>
 
-### `npm test`
+"Tea Time Subscription" is a final mod 3 Full stack project were I built a backend and a frontend in two days. This is an admin page where I can see what customers have tea subscriptions and toggle on and off their subscriptions.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+<h2 align="center"> Tech </h2>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+BE 
+- Ruby on Rails, tested with RSpec, simplecov
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+FE 
+- Built with React 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<h2 align="center"> Installation </h2>
 
-### `npm run eject`
+1. Fork and clone this BE repo 
+2. `cd` into the repo
+2. Run these commands in your terminal
+  - `bundle install`
+  -  `rails db:{drop, create, migrate, seed}`
+  -  `rails s`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. Fork this FE repo
+5. `cd` into cloned repo
+6. Run `npm install`
+7. Run `npm start`
+8.  Enter `control + c` in your terminal to stop running the React app at any time
+9. To run Cypress tests, use `npx cypress open`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<!-- This is where we will display the GIF (no more than 2 of functionality) -->
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<h2 align="center"> Contributors </h2>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Candice Cirbo - [linkedin](https://www.linkedin.com/in/candicecirbo/) - [gitHub](https://github.com/CCirbo) - ccirbots@gmail.com
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<h2 align="center"> Learning Goals </h2>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Things we'll be looking for:
+- A strong understanding of Rails, React and best practices
+- BE: Ability to create restful routes
+- BE: Demonstration of well-organized code, following OOP
+- BE: Test Driven Development
+- FE: An understanding of basic usability practices and standards
+- FE: A clear hierarchy of information
+- Clear documentation
+- Your ability to prioritize for MVP
+- Clean, well factored code
+Try to limit your total time to approximately 7-8 hours each side of the stack. We recommend starting with the BE, and then moving onto the FE, but you are welcome to design your own workflow. Prioritize what is important to completing MVP and demonstrating your capabilities as a developer.
 
-### Code Splitting
+Tea Subscription Service
+You will create a full stack application for a Tea Subscription Service, including a Rails API and a React front end.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Rails API
+Requirements:
+At a minimum, you must create:
 
-### Analyzing the Bundle Size
+An endpoint to get all tea subscriptions
+An endpoint to get info about one subscription, including the tea(s) involved and what customer(s) is subscribed or has been in the past (if cancelled)
+An endpoint to cancel a specific subscription
+Beyond the base requirements, include any additional endpoints you'd like, but be mindful of your time. You don't need to go overboard, consider what might be necessary to achieve MVP so that this API is easy to understand and consume by a Frontend Developer.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+If you are looking for a stretch option, you can consume this API for tea product information: Spoontacular API
 
-### Making a Progressive Web App
+Data Details
+Note: The below data outlines are meant to be a guide for data details you may use in the application. If you want to change or include more information please do so. The data below does not need to be a direct mapping to your database schema (i.e. there might be more tables involved). Keep in mind there are many ways to implement this at a database level. Just be sure to choose an option that makes sense to you and reflects how you are assuming the tea subscription service functioning. You can make business assumptions. Using fake data in your application is okay.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+**Tea**
 
-### Advanced Configuration
+- Title
+- Description
+- Temperature
+- Brew Time
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+**Customer**
 
-### Deployment
+- First Name
+- Last Name
+- Email
+- Address
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+**Subscription**
 
-### `npm run build` fails to minify
+- Title
+- Price
+- Status
+- Frequency
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+Front End
+
+Again, try to limit your total time on the FE to around 8 hours. Prioritize what is important to get this working and as close to MVP as possible. Please do not attempt to recreate an entire existing Tea Shop's website. We're interested in seeing your ability to write clean code to solve a problem with an understanding of basic UX. We're not looking for fancy UI tricks or hacks.
+
+Tea Subscription React App
+You will create a tea subscription application that consumes the Rails API you've just built.
+
+Requirements:
+At a minimum, you must show:
+
+List of subscriptions (name with an image or icon)
+Detailed View of subscription (name, image or icon, description, tea(s) and customer(s) involved)
+The ability to cancel a subscription (for one tea at a time or multiple teas) somewhere in the application
+Some sort of search, filter, OR sort
+Beyond the base requirements, include any additional elements you'd like, just be mindful of your time. You don't need to go overboard, just consider what might be necessary to achieve MVP so that this app is easy-to-use, information is clear, and navigation is painless. Put yourself in a user's shoes and think about what you would need (or want). The app should be usable on desktop, tablet, and mobile devices.
+
+
+- **Technical Skills**:
+  - Implement and deploy both backend (Rails API) and frontend (ReactJS) applications.
+  - Build our own API.
+  - Ensure thorough testing, including unit and integration tests.
+  - Adhere to MVC architecture 
+
+- **Frontend Development**:
+  - Build a multi-page application with React Router.
+  - Implement error-handling.
+  - Ensure responsive design across different screen sizes.
+
+- **Backend Development**:
+	- Database Design: Design and implement relational databases (e.g., PostgreSQL) and optimize queries.
+	-	API Development: Create RESTful APIs with Rails 
+	- Testing: Write unit tests with RSpec and check coverage with simplecov.
+
+
+
+
+
+
